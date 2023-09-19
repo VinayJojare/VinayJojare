@@ -1,0 +1,15 @@
+# DECORATOR =
+
+
+def my_decoretor(func):
+    def wrapper():
+        print("before")
+        func()
+        print("after")
+    return wrapper
+
+@my_decoretor
+def say_hello():
+    print("HEllo")
+
+say_hello()
